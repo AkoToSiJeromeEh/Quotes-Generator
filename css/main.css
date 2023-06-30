@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(12, 0, 121, 0.51);
+}
+.title-main{
+    font-family: 'Lilita One', cursive;
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+}
+.p-main{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    color: gray;
+}
+.main-contents{
+    margin-top: 3rem;
+    border-radius : 25px;
+}
+.div-1{
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(240, 248, 255, 0.496);
+    padding: 30px;
+}
+.div-2{
+    margin-top: 3rem;
+}
+.div-result{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 5px rgb(244, 244, 244);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(252, 199, 199);
+    padding: 60px;
+}
+.btn-quotes{
+    cursor: pointer;
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+     padding: 4px 25px 4px 25px;
+    border: none;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    background-color: lightblue;
+    transition: all 0.5s;
+}
+.btn-quotes:hover {
+    background-color: lightpink;
+    color:white
+}
+.btn-clear{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: lightpink;
+    padding: 4px 25px 4px 25px;
+    border: none;
+    margin-left: 10px;
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+}
+.btn-clear:hover{
+    color: white;
+    background-color: lightblue;
+    transition: all 0.5s;
+}
+.footer{
+    margin-top: 10rem;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.536);
+    padding: 15px
+}
+.title-footer{
+    font-family: 'Lilita One', cursive;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.title{
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1px;
+}
+.bi-facebook{
+    background-color: lightpink;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    padding: 8px 10px 8px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bi-facebook:hover,.bi-twitter:hover{
+    background-color: aqua;
+    color: rgb(6, 6, 6);
+}
+.bi-instagram:hover{
+    background-color: aqua;
+    color: rgb(6, 6, 6);
+}
+.bi-instagram{
+    cursor: pointer;
+    background-color: lightpink;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding: 8px 10px 8px 10px;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+.bi-twitter{
+    cursor: pointer;
+    background-color: lightpink;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding: 8px 10px 8px 10px;
+    border-radius: 50px;
+}
+.result{
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+.author{
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    color: rgb(37, 37, 37);
+    margin-top: 2rem;
+    letter-spacing: 1px;
+}
+.to-top {
+    opacity: 0;
+    transform: translateY(0);
+    animation: 1s toTop ease forwards;
+}
+
+@keyframes toTop {
+    100% {
+        opacity: 1;
+        transform: translateY(-20%);
+    }
+}
+.to-x-y {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: 1s toleft ease forwards;
+}
+
+@keyframes toleft {
+    100% {
+        opacity: 1;
+        transform: translateX(-0%);
+    }
+}
+.to-bottom{
+    opacity: 0;
+    transform: translateY(0);
+    animation: 1s toBottom ease forwards;
+}
+@keyframes toBottom  {
+    100% {
+        opacity: 1;
+        transform: translateY(20%);
+    }
+}
+
+@media (max-width:500px) {
+    
+    .div-result{
+        width: 100%;
+        margin-top: 0;
+        padding: 30px;
+    }
+    .title-footer{
+        font-size: 14px;
+    }
+    .footer-icon{
+        margin-top: 20px;
+    }
+
+}
